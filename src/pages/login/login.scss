@@ -1,0 +1,44 @@
+.login-box{
+    background: #fff;
+    width: 560px;
+    border-radius: 30px;
+    .login-title{
+        font-size: 32px;
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 50px;
+    }
+    .login-btn{
+        background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
+        // transition: background-color 0.5s;
+        // &:hover{
+        //     background: -webkit-linear-gradient(left, #00dbde, #fc00ff);
+        // }
+        height: 50px;
+        border-radius: 25px!important;
+        border: none;
+        font-size: 16px;
+    }
+    .ant-input-affix-wrapper{
+        border: none;
+        border: 1px rgba(28, 28, 28, 0.1) solid;
+        border-radius: 8px!important;
+        font-size: 16px;
+    }
+    .ant-input-affix-wrapper, .ant-select:not(.ant-select-customize-input) .ant-select-selector, .ant-picker{
+        height: 50px!important;
+    }
+    // .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover{
+    //     border: none;
+    // }
+    .ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused{
+        box-shadow: none;
+    }
+    .ant-input-affix-wrapper{
+        padding: 12px 10px;
+    }
+    .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper-focused{
+        box-shadow: none;
+    }
+}
