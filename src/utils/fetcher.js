@@ -19,11 +19,8 @@ export function fetcher(options) {
   }
   const config = {
     // 测试
-    // baseURL: options?.baseURL || "https://solanasup.top/",
-    // baseURL: options?.baseURL || "http://103.143.231.82:8080",
-    // baseURL: options?.baseURL || "http://192.168.8.101:8080",
-    // baseURL: options?.baseURL || "http://192.168.1.179:8080",
-    baseURL: options?.baseURL || "/api",
+    baseURL: options?.baseURL || "http://192.168.1.179:8080",
+    // baseURL: options?.baseURL || "/api",
     method: options.method || 'post',
     url: options.url,
     data: options.data,
@@ -37,8 +34,6 @@ export function fetcher(options) {
       options.headers['token'] = token
     }
     config['headers'] = options.headers
-
-
   }
   return axios(config)
     .then(res => {

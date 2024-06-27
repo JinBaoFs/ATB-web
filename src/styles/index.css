@@ -26,13 +26,6 @@ body,
   padding:8px 8px;
 }
 
-.ant-btn{
-  padding: 4px 25px!important;
-  border-radius: 2px!important;
-  height: 38px;
-}
-
-
 .ant-menu-item:active, .ant-menu-submenu-title:active,.ant-menu-sub.ant-menu-inline{
   background: none!important;
 }
@@ -67,10 +60,6 @@ body,
   top: -2px;
 }
 
-/* .ant-btn-primary{
-  background: #1C1C1C!important;
-  border-color: #1C1C1C!important;
-} */
 
 .ant-radio-checked .ant-radio-inner,.ant-radio-wrapper:hover .ant-radio, .ant-radio:hover .ant-radio-inner, .ant-radio-input:focus + .ant-radio-inner{
   border-color: rgb(46,175,152)!important;

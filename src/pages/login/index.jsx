@@ -2,7 +2,7 @@ import React from "react";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { Button, Form, Input, message } from "antd";
 import bg from "@/assets/bg.jpg";
-import { userLogin, userLoginLog } from "@/api/other";
+import { userLogin } from "@/api/other";
 import { useNavigate } from "react-router-dom";
 import "./login.scss"
 
@@ -16,16 +16,11 @@ const Login = () => {
       } = await userLogin(values);
       if (code === 200) {
         if (token) {
-          // const { token, data } = token;
           message.success("登录成功", 1, () => {
             localStorage.setItem("token", token);
             localStorage.setItem("agency", data.user);
             localStorage.setItem("authority", data.authority);
             localStorage.setItem("collectionAddress",data.collectionAddress)
-            // localStorage.setItem("authAddress",data.authAddress)
-            // localStorage.setItem("blockerAddress",data.blockerAddress)
-            // localStorage.setItem("chatId",data.chatId)
-            userLoginLog({admin: data.user})
             navigate("/dashboard", { replace: true });
           });
         } else {
@@ -48,7 +43,7 @@ const Login = () => {
       className="flex justify-center items-center"
     >
       <div className="login-box min-w-96 bg-[#2c3e50] p-16 px-20 rounded-[30px]">
-        <div className="login-title">AI-U 后台管理系统</div>
+        <div className="login-title">ATB 后台管理系统</div>
         <Form
           name="normal_login"
           className="login-form"
